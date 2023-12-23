@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+
+
+
+.wrapper{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.text{
+    flex-basis: 45%;
+
+}
+.all-images{
+height: 80vh;
+display: flex;
+
+}
+.sall-images{
+    display: flex;
+    flex-direction: column;
+
+}
+.sall-images img {
+    height: 19vh;
+    margin-bottom:9px ;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.sall-images img:hover{
+    opacity: 1;
+}
+.main-images img{
+    height: 80%;
+    margin-left: 150px;
+    margin-right: 20px;
+}
+p{
+    margin-bottom: 20px;
+    
+}
+.content{
+    margin-left: 60px;
+}
+.brand{
+    background-color: green;
+    width:fit-content ;
+    columns: white;
+    font-size: 12px;
+    padding: 2px 5px;
+}
+h2
+{
+    font-size: 25px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.review{
+    background-color: green;
+    display: inline-block;
+    color: aliceblue;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.review .fa{
+    counter-reset: #fff;
+}
+.price{
+    color: rgb(28, 29, 29);
+    font-size: 26px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.price-box{
+    display: flex;
+    align-items: center;
+}
+input{
+    width: 30px;
+    border: 1px solid black;
+    font-weight: bold;
+    text-align: center;
+
+}
+button{
+    width: 140px;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(210, 162, 6);
+    padding: 10px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    
+}
+button .fa{
+    margin-right: 10px;
+
+}
+.btn{
+    background-color: #d46022;
+}
+
+
+@media only screen and (max-width:1200px)
+{
+    .wrapper{
+        flex-direction: column;
+        height: auto;
+        padding: 5% 0;
+
+    }
+    .text {
+        padding-top: 50px;
+
+    }
+
+}
+@media only screen and (max-width:600px){
+    .all-images{
+        flex-direction: column;
+        height: auto;
+    }
+    .sall-images{
+        flex-direction: row;
+        justify-content: space-evenly;
+        order: 1;
+
+    }
+    .product-box{
+        width: 100%;
+
+    }
+    .main-images img {
+        width: 100%;
+
+    }
+    .sall-images img {
+        width: 25%;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
